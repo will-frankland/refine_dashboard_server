@@ -8,7 +8,7 @@ import {
   updateProperty
 } from '../controllers/property.controller.js';
 
-const router = express.router();
+const router = express.Router();
 
 router.route('/').get(getAllProperties);
 router.route('/:id').get(getAllPropertyDetails);
